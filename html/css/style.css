@@ -42,3 +42,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+  }
