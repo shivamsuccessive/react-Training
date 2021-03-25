@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
+import Slider from './components/Slider';
 import Welcome from './components/textField/index';
 import styles from './components/textField/style';
+import TextFieldDemo from './pages/TextFieldDemo';
 
 class App extends React.Component {
   constructor(props) {
@@ -26,9 +28,12 @@ class App extends React.Component {
 
   render() {
     return (
-    <>
+    <div>
+      {/* <TextFieldDemo /> */}
+      {/* <Slider random={1} banners = {[1,2,3]}/> */}
+      <Slider />
       <Welcome validClass={this.state.validClass} valid={this.state.valid} invalid={this.state.invalid} inValidClass={this.state.inValidClass} onChange={this.handleChange} stylesheet={styles} ></Welcome>
-    </>
+    </div>
     );
   }
 }
