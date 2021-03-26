@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css';
 import Slider from './components/Slider';
-import Welcome from './components/textField/index';
-import styles from './components/textField/style';
-import TextFieldDemo from './pages/TextFieldDemo';
+import Welcome from './components/TextField/index';
+// import styles from './components/TextField/style';
+// import TextFieldDemo from './pages/TextFieldDemo';
+import SelectField from './components/SelectField'
+import RadioGroup from './components/RadioGroup'
+import InputDemo from './pages/InputDemo'
+import Math from './components/Math/math'
 
 class App extends React.Component {
   constructor(props) {
@@ -29,10 +33,13 @@ class App extends React.Component {
   render() {
     return (
     <div>
+      {/* <InputDemo /> */}
+      {/* <RadioGroup /> */}
+      <Math first="3" second="2" operator="*" />
       {/* <TextFieldDemo /> */}
       {/* <Slider random={1} banners = {[1,2,3]}/> */}
-      <Slider />
-      <Welcome validClass={this.state.validClass} valid={this.state.valid} invalid={this.state.invalid} inValidClass={this.state.inValidClass} onChange={this.handleChange} stylesheet={styles} ></Welcome>
+      {/* <Slider />
+      <Welcome validClass={this.state.validClass} valid={this.state.valid} invalid={this.state.invalid} inValidClass={this.state.inValidClass} onChange={this.handleChange} stylesheet={styles} ></Welcome> */}
     </div>
     );
   }
